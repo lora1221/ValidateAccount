@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateAccount(str){
+        var regex = /^[_a-z0-9]{6,}$/;
+        if (regex.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    var account = prompt("Enter account: ");
+    var result = validateAccount(account);
+    if (result) {
+        alert("It's a valid account");
+    } else {
+        alert("It's NOT a valid account");
+    }
+</script>
+</body>
+</html>
