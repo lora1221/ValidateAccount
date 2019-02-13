@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        var regex = /^[ACP][0-9]{4}[GHIKLM]$/;
+        if (regex.test(str)) {
+            return true;
+        }
+        return false;
+    }
+
+    var name = prompt("Enter class name: ");
+    var result = validateClassName(name);
+    if (result){
+        alert("Valid name");
+    } else {
+        alert("Not a valid name");
+    }
+</script>
+</body>
+</html>
